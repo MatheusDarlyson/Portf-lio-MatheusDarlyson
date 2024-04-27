@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Portfólio - Matheus Darlyson</title>
 </head>
@@ -22,14 +22,14 @@
             <h1>Dev_MatheusD.</h1>
         </a>
 
-         <nav class="navbar">
+        <nav class="navbar">
             <ul>
                 <li><a href="#person">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contacts">Contatos</a></li>
             </ul>
-         </nav>
+        </nav>
     </section>
 
     <!-- End Header -->
@@ -58,15 +58,15 @@
                     </ul>
                     <ul>
                         <li>
-                            <div data="MySql">
-                                <img src="./svg/icons8-mysql.svg" alt="mysql-icon">
+                            <div data="Phyton">
+                                <img src="./svg/icons8-python.svg" alt="phyton.icon">
                             </div>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <div data="Phyton">
-                                <img src="./svg/icons8-python.svg" alt="phyton.icon">
+                            <div data="C#">
+                                <img src="/svg/icons8-c-sharp-logo.svg" alt="c#.icon">
                             </div>
                         </li>
                     </ul>
@@ -91,6 +91,13 @@
                             </div>
                         </li>
                     </ul>
+                    <ul>
+                        <li>
+                            <div data="MySql">
+                                <img src="./svg/icons8-mysql.svg" alt="mysql-icon">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
             </div>
@@ -100,7 +107,7 @@
         <!-- Início do Segundo bloco (l/d)  -->
         <div class="person-background">
             <div class="wrapper-profile-photo">
-                <img class="profile-photo" src="./img/matheusd.png" alt="foto-matheus-darlyson">
+                <img class="profile-photo" src="/img/Matheus Darlyson.png" alt="foto-matheus-darlyson">
             </div>
 
             <div class="links">
@@ -136,15 +143,17 @@
 
             <h3>
                 Estudante de Análise e Desenvolvimento de Sistemas com familiaridade em
-                <p> HTML, CSS, JavaScript, MySql, Phyton e C</p>
+                <p> HTML, CSS, JavaScript, MySql, Phyton, C e C#</p>
             </h3>
 
             <h4>
-                Meu nome é Matheus Darlyson, tenho 22 anos. Atualmente estou em migração de carreira, saindo da área de
-                Logística
-                para área de TI. <br>
-                Estou aberto à vagas de estagio para aprender mais dentro do vasto campo da tecnologia.
-                Pretendo me especializar em desenvolvimento Back-End e também na área de DataScience.
+                Hello World! Sou Matheus Darlyson, tenho 23 anos e estou no terceiro período do curso de Análise e
+                Desenvolvimento de Sistemas. <br><br> Sou um entusiasta da tecnologia e estou sempre em busca de novos
+                conhecimentos no mundo da TI.
+
+                Atualmente, estou em transição de carreira e meu objetivo é conseguir um estágio na área de
+                desenvolvimento. Estou especialmente interessado em me especializar em desenvolvimento Back-End e Data
+                Science.
             </h4>
 
             <h4>
@@ -152,7 +161,8 @@
             </h4>
 
             <div class="button-cta">
-                <a href="public/document/Currículo - Matheus Darlyson.pdf" download="CV Matheus Darlyson" aria-label="Baixar Currículo MatheusDarlyson">
+                <a href="/public/document/Currículo Matheus Darlyson .pdf" download="CV Matheus Darlyson"
+                    aria-label="Baixar Currículo MatheusDarlyson">
                     Currículo</a>
             </div>
 
@@ -167,10 +177,11 @@
             <h2>PROJETOS 🏗️ </h2>
         </div>
 
-        <div class="wrapper-projects">  
-
-            <div class="card-project">
-                <div class="content-project">
+        <div class="swiper mySwiper">
+            <!-- wrapper projects -->
+            <div class="swiper-wrapper">
+            <!-- content-project -->
+                <div class="swiper-slide card-project ">
                     <div class="image-project">
                         <a href="https://coinchanger.netlify.app/">
                             <img src="/img/câmbio.webp" alt="Conversor de Moedas">
@@ -192,63 +203,89 @@
                         </a>
                     </div>
                 </div>
-            </div>
-               
-            <div class="card-project">
-                <div class="content-project">
+                <div class="swiper-slide card-project ">
                     <div class="image-project">
-                        <a href="https://jogodeadvinhacao.netlify.app/">
-                            <img src="/img/Ilustração-cérebro+1.png" alt="img_advinhacao">
+                        <a href="https://safezonepwa.netlify.app/">
+                            <img src="/img/icone1.jpeg" alt="SafeZone">
                         </a>
                     </div>
 
-                    <span>Jogo de Advinhação!</span>
+                    <span>SafeZone</span>
 
-                    <p>Minigame de advinhação de números, feito em acompanhamento à Imersão em JS da Alura.</p>
-
+                    <p> PWA de mapeamento de riscos dentro de empresas e construções
+                        , atividade da disciplina de Desenvolvimento Mobile.
+                    </p>
                     <div class="cta-project">
-                        <a href="https://github.com/MatheusDarlyson/Advinhar_Numero">
+                        <a href="https://github.com/MatheusDarlyson/SafeZone">
                             Código
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://jogodeadvinhacao.netlify.app/">
+                        <a href="https://safezonepwa.netlify.app/">
                             Site
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
-                </div>
-            </div> 
-
-            <div class="card-project">
-                <div class="content-project">
+               </div>
+                <div class="swiper-slide card-project ">
                     <div class="image-project">
-                        <a href="https://cinelight.netlify.app/">
-                            <img src="/img/CineLight.png" alt="CineLight">
+                        <a href="https://borapraaula.netlify.app/">
+                            <img src="/img/palestra.png" alt="BoraPraAula">
                         </a>
                     </div>
 
-                    <span>Projeto CineLight</span>
+                    <span>Bora pra Aula?</span>
 
-                    <p>Mini Catálogo de Filmes, feito na semana de Imersão em Js da Alura.</p>
-
+                    <p> PWA de acesso à salas de aula através de leitura de QrCodes, com 
+                        disponibilização de quadro de horários para turma de 3º periodo da Faculdade Senac Recife.
+                        Feito para disciplina de Desenvolvimento Mobile.
+                    </p>
                     <div class="cta-project">
-                        <a href="https://github.com/MatheusDarlyson/ListaFilmes">
+                        <a href="https://github.com/MatheusDarlyson/BoraPraAula">
                             Código
                             <i class="fa-brands fa-github"></i>
                         </a>
-                        <a href="https://cinelight.netlify.app/">
+                        <a href="https://borapraaula.netlify.app/">
                             Site
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
-                </div>
+               </div>
+                <div class="swiper-slide card-project ">
+                    <div class="image-project">
+                        <a href="#">
+                            <img src="/img/calculator.avif" alt="BoraPraAula">
+                        </a>
+                    </div>
+
+                    <span>Calculadora em C#</span>
+
+                    <p> Código feito como maneira de práticar os estudos em linguagem C#
+                    </p>
+                    <div class="cta-project">
+                        <a href="https://github.com/MatheusDarlyson/Calculadora_CSharp">
+                            Código
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <!-- <a href="https://borapraaula.netlify.app/">
+                            Site
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+                        </a>
+                    </div>
+               </div>
             </div>
-            
         </div>
 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
 
 
     </section>
+
+
+
+
+
     <!-- Fim de Projetos -->
 
     <!-- Contatos -->
@@ -276,7 +313,7 @@
                     <span>E-mail</span>
                     <a href="mailto:matheussdarlyson@gmail.com">
                         matheussdarlyson@gmail.com
-                    </a>    
+                    </a>
                 </div>
             </div>
 
@@ -296,10 +333,13 @@
     <!-- End Footer -->
 
     <script src="/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 
 </body>
 
 
 
-</html> 
+
+</html>

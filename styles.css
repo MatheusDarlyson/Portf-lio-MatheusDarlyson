@@ -283,8 +283,12 @@ body {
     radial-gradient( rgba(0,0,0,0.15) 60%, transparent 0),
     radial-gradient(#000 68%, transparent 0),
     linear-gradient(to top right, #ffa500 0%, #ff1493 100%);  
+
+    height: 75%;
+
 }
 .wrapper-profile-photo img{
+    max-height: 100%;
     width: 100%;
     border-radius: 50%;
     
@@ -470,24 +474,27 @@ body {
 
 }
 
+.swiper{
+    height: 100%;
+    width: 100%;
 
-.wrapper-projects{
     display: flex;
-    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 
     height: 500px;
 
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
+    margin-top: 2rem;
 }
+
 
 .card-project{
     width: 320px;
     height: 450px;
 
     padding: 30px 20px 20px;
-    margin: 0px 0px 10px;
+    margin: 0px 10px;
 
     position: relative;
     background:var(--color-white); 
@@ -497,6 +504,8 @@ body {
     flex-direction: column;
 
     border-radius: 20px;
+
+    z-index: 1;
 
 }
 
@@ -512,16 +521,7 @@ body {
     background: var(--color-purple);
     border-radius: 20px 20px 0px 0px;
 
-}
-
-.content-project{
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    z-index: 1;
+    z-index: -1;
 }
 
 .image-project{
@@ -558,7 +558,7 @@ body {
 
 }
 
-.content-project span{
+.card-project span{
     color: var(--color-black);
     font-weight: bold;
     font-size: 1.7rem;
@@ -567,7 +567,7 @@ body {
 
 }
 
-.content-project p{
+.card-project p{
     color: #3d3d4b;
     font-weight: bold;
     font-size: 1.1rem;
@@ -600,9 +600,7 @@ body {
 
 .cta-project a:hover{
     opacity: .7;
-
 }
-
 /* Final do projects */
  
 /* Inicio do Contatos */
@@ -741,3 +739,312 @@ body {
 
     }
 }
+
+/* Para telas menores que 768px (tablets e dispositivos móveis em modo paisagem) */
+@media only screen and (max-width: 768px) {
+    /* Header */
+    #header {
+        padding: 10px 20px;
+    }
+
+    .header-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        max-width: 280px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    /* Fim Header */
+
+    /* Estilos da 1ª página */
+    .person-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .person-content div h1 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .person-name {
+        margin-top: 6rem;
+    }
+
+    .stacks-content {
+        margin-top: 3rem;
+    }
+
+    .stacks-content h3 {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .stacks ul li {
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .wrapper-profile-photo {
+        margin: 15px;
+    }
+
+    .wrapper-profile-photo img {
+        max-height: 150px;
+    }
+
+    /* Fim Estilos da 1ª página */
+
+    /* Estilos da 2ª página */
+    .box-about {
+        padding: 2rem;
+    }
+
+    .section-subtitle h2 p {
+        font-size: 2rem;
+    }
+
+    .box-about h3 {
+        margin: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .box-about h4 {
+        margin: 1rem 1.5rem;
+        font-size: 1.25rem;
+    }
+
+    .button-cta {
+        margin: 2rem 1.5rem;
+    }
+
+    .button-cta a {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+
+    /* Fim Estilos da 2ª página */
+
+    /* Estilos de Projetos */
+    .projects-title h2 {
+        margin: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .swiper {
+        margin-top: 1rem;
+    }
+
+    .card-project {
+        width: 280px;
+        height: 400px;
+        margin: 0px 5px;
+    }
+
+    .image-project {
+        height: 200px;
+        width: 220px;
+    }
+
+    .card-project span {
+        font-size: 1.5rem;
+    }
+
+    .card-project p {
+        font-size: 1rem;
+    }
+
+    .cta-project {
+        margin: auto auto 10px auto;
+    }
+
+    .cta-project a {
+        padding: 5px 12px;
+        font-size: 1.1rem;
+    }
+
+    /* Fim de Projetos */
+
+    /* Estilos de Contatos */
+    .contacts-icon-content h2 {
+        margin: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .contact-icon {
+        height: 30px;
+        width: 30px;
+        padding: 0.8rem;
+    }
+
+    .contact-icon i {
+        font-size: 1.5rem;
+    }
+
+    .contact-info span {
+        font-size: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    /* Fim de Contatos */
+
+    /* Estilos do Footer */
+    .container-footer {
+        font-size: 0.9rem;
+    }
+    /* Fim do Footer */
+}
+
+/* Para telas menores que 480px (smartphones em modo retrato) */
+@media only screen and (max-width: 480px) {
+    /* Header */
+    .header-title h1 {
+        font-size: 1.2rem;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+    /* Fim do Header */
+
+    /* Estilos da 1ª página */
+    .person-content div h1 {
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .person-name {
+        margin-top: 4rem;
+    }
+
+    .stacks-content {
+        margin-top: 2rem;
+    }
+
+    .stacks-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .stacks ul li {
+        margin: 6px;
+        padding: 6px;
+    }
+
+    .wrapper-profile-photo {
+        margin: 10px;
+    }
+
+    .wrapper-profile-photo img {
+        max-height: 120px;
+    }
+    /* Fim da Estilização da 1ª página */
+
+    /* Estilos da 2ª página */
+    .box-about {
+        padding: 1rem;
+    }
+
+    .section-subtitle h2 p {
+        font-size: 1.5rem;
+    }
+
+    .box-about h3 {
+        margin: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .box-about h4 {
+        margin: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    .button-cta {
+        margin: 1.5rem 1rem;
+    }
+
+    .button-cta a {
+        font-size: 1rem;
+        padding: 6px;
+    }
+    /* Fim dos Estilos da 2ª página */
+
+    /* Estilos de Projetos */
+    .projects-title h2 {
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .swiper {
+        margin-top: 0.5rem;
+    }
+
+    .card-project {
+        width: 240px;
+        height: 360px;
+        margin: 0px 3px;
+    }
+
+    .image-project {
+        height: 160px;
+        width: 180px;
+    }
+
+    .card-project span {
+        font-size: 1.2rem;
+    }
+
+    .card-project p {
+        font-size: 0.8rem;
+    }
+
+    .cta-project {
+        margin: auto auto 8px auto;
+    }
+
+    .cta-project a {
+        padding: 4px 10px;
+        font-size: 0.9rem;
+    }
+    /* Fim dos Estilos de Projetos */
+
+    /* Estilos de Contatos */
+    .contacts-icon-content h2 {
+        margin: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .contact-icon {
+        height: 25px;
+        width: 25px;
+        padding: 0.6rem;
+    }
+
+    .contact-icon i {
+        font-size: 1.3rem;
+    }
+
+    .contact-info span {
+        font-size: 0.8rem;
+    }
+
+    .contact-info p {
+        font-size: 0.7rem;
+    }
+    /* Fim dos Estilos de Contatos */
+
+    /* Estilos do Footer */
+    .container-footer {
+        font-size: 0.8rem;
+    }
+    /* Fim do Footer */
+}
+
+/* Fim das regras de mídia para responsividade */
